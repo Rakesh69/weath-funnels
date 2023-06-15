@@ -176,7 +176,7 @@ const Index = () => {
                         postal_code={item.postal_code}
                         onClick={(e) => {
                           e.preventDefault();
-                          setPopularResults((prev) =>
+                          setSaleResults((prev) =>
                             prev.filter((i: any) => i.id !== item.id)
                           );
                           setSelectedValue((prev) => [
