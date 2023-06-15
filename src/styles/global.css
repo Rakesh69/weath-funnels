@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.react-select-container {
+  @apply w-full h-full;
+}
+.react-select-container .react-select__control {
+  @apply border-none;
+}
+.react-select-container .react-select__control--is-focused {
+  @apply border-none shadow-none;
+}
+.react-select-container .react-select__indicator {
+  @apply hidden;
+} 
+.react-select-container .react-select__indicator-separator {
+  @apply hidden;
+}
+.react-select-container .react-select__value-container {
+  @apply p-0;
+}
+.react-select-container .react-select__multi-value {
+  @apply !bg-primary-100 !text-white !px-2 h-full !font-bold rounded-md;
+}
+.react-select-container .react-select__multi-value__label {
+  @apply !text-white;
+}
+.react-select-container .react-select__multi-value__remove {
+  @apply hover:bg-transparent hover:text-white;
+}
